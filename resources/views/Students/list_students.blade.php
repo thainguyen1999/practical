@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="app-content content ">
-    
+   //
     <div class="card">
                     <div class="card-body border-bottom d-flex justify-content-between align-items-center">
                         <h4 class="card-title">Danh sách</h4>
@@ -48,7 +48,7 @@
                                     <th style="text-align: right;">
                                         <a href="{{route('Students.getUpdate',$students->id)}}" class="btn btn-info btn-sm">Sửa</a>
                                         <a type="button" class="btn btn-danger btn-sm  delete-record" data-bs-toggle="modal" data-bs-target="#deleteModal{{$students->id}}">Xóa</a>
-                                            
+
                                     </th>
                                 </tr>
 
@@ -58,8 +58,8 @@
                                         <div class="modal-content">
                                             <div class="modal-header flex-column">
                                                 <div class="icon-box">
-                                                </div>						
-                                                <h4 class="modal-title w-100">Bạn có chắc không?</h4>	
+                                                </div>
+                                                <h4 class="modal-title w-100">Bạn có chắc không?</h4>
                                             </div>
                                             <div class="modal-body">
                                                 <p>Bạn có thực sự muốn xóa? Quá trình này không thể được hoàn tác.</p>

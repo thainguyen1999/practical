@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <h1>Thêm Sinh viên</h1>
             </div>
-
+//
         </div>
     </div>
     @if(session()->has('success'))
@@ -31,7 +31,7 @@
             <div class="card-header">
             </div>
             <div class="card-body p-0">
-                
+
                 <form action="/create" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
@@ -73,7 +73,7 @@
                                         @error('telephone')
                                         <span class="text-danger mt-1 d-block">{{ $message }}</span>
                                         @enderror
-                                    </div>                       
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 @extends('layout.layout_default')
-
+//
 @section('content')
 <div class="app-content content">
     <div class="container-fluid">
@@ -42,7 +42,7 @@
                                             <i class="fas fa-minus"></i></button>
                                     </div>
                                 </div>
-                      
+
                                 <div class="card-body">
                                     <div class="form-group mt-1 mb-1">
                                         <label for="inputName" class="form-label mb-1">Name:</label>
@@ -60,7 +60,7 @@
                                         <label for="inputName" class="form-label mb-1">Phone:</label>
                                         <input type="number" id="telephone" name="telephone" value="{{$student_detail->telephone}}" class="form-control" placeholder="Nhập số điện thoại">
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>

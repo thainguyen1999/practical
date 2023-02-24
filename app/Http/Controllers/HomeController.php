@@ -50,5 +50,6 @@ class HomeController extends Controller
         $students = Students::findOrFail($id);
         $students->delete();
         return redirect(route('listStudents'))->with('success', 'Đã xóa!');
+        //
     }
 }
