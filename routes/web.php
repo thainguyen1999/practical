@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('/')->group(function() {
+    Route::get('',[HomeController::class,'listStudents'])->name('listStudents');
+    Route::get('create',[HomeController::class,'createStudents'])->name('createStudents');
+    Route::post('create',[HomeController::class,'addStudents']);
+    Route::get('update/{id}',[HomeController::class,'getUpdateStudents'])->name('Students.getUpdate');
+    Route::post('update/{id}',[HomeController::class,'updateStudents'])->name('Students.update');
+    Route::get('delete/{id}', [HomeController::class, 'deleteStudents'])->name('Students.delete');
 });
