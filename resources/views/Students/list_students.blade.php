@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="app-content content ">
-   //
+   ///
     <div class="card">
                     <div class="card-body border-bottom d-flex justify-content-between align-items-center">
                         <h4 class="card-title">Danh sách</h4>

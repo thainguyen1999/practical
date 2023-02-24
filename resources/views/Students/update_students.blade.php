@@ -1,5 +1,5 @@
 @extends('layout.layout_default')
-//
+///
 @section('content')
 <div class="app-content content">
     <div class="container-fluid">

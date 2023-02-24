@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//
+///
 
 Route::prefix('/')->group(function() {
-    Route::get('',[HomeController::class,'listStudents'])->name('listStudents');
-    Route::get('create',[HomeController::class,'createStudents'])->name('createStudents');
-    Route::post('create',[HomeController::class,'addStudents']);
-    Route::get('update/{id}',[HomeController::class,'getUpdateStudents'])->name('Students.getUpdate');
-    Route::post('update/{id}',[HomeController::class,'updateStudents'])->name('Students.update');
-    Route::get('delete/{id}', [HomeController::class, 'deleteStudents'])->name('Students.delete');
+    Route::get('',[\App\Http\Controllers\HomeController::class,'listStudents'])->name('listStudents');
+    Route::get('create',[\App\Http\Controllers\HomeController::class,'createStudents'])->name('createStudents');
+    Route::post('create',[\App\Http\Controllers\HomeController::class,'addStudents']);
+    Route::get('update/{id}',[\App\Http\Controllers\HomeController::class,'getUpdateStudents'])->name('Students.getUpdate');
+    Route::post('update/{id}',[\App\Http\Controllers\HomeController::class,'updateStudents'])->name('Students.update');
+    Route::get('delete/{id}', [\App\Http\Controllers\HomeController::class, 'deleteStudents'])->name('Students.delete');
 });

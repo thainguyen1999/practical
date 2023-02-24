@@ -12,7 +12,7 @@ class HomeController extends Controller
         $students = Students::all();
         return view('Students.list_students', compact('students'));
     }
-
+//
     public function createStudents(){
 
         return view('Students.create_students');
@@ -43,7 +43,7 @@ class HomeController extends Controller
         $data = $request->all();
         $students_update = Students::findOrFail($id);
         $students_update -> update($data);
-        return redirect(route('listStudents'))->with('success', 'Chỉnh sửa thành công');
+        return redirect(route('listStudents'))->with('success', 'hoan thanh');
     }
 
     public function deleteStudents($id){

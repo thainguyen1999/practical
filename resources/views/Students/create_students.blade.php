@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <h1>Thêm Sinh viên</h1>
             </div>
-//
+///
         </div>
     </div>
     @if(session()->has('success'))
